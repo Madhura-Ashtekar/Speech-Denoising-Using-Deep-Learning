@@ -1,4 +1,6 @@
+# Problem 1
 # Speech Denoising Using Deep Learning
+
 This project implements a deep learning-based speech denoising system using a fully-connected neural network. The goal is to remove noise from a speech signal contaminated with chip-eating noise.
 
 Dataset
@@ -9,8 +11,6 @@ train_dirty_male.wav: Noisy speech signal with chip-eating noise, used for train
 test_x_01.wav: Noisy speech signal used for validation.
 test_x_02.wav: Noisy speech signal containing Professor K's voice contaminated with chip-eating noise, used for testing.
 test_s_01.wav: Clean speech signal corresponding to test_x_01.wav, used for computing the Signal-to-Noise Ratio (SNR).
-
-# Problem 1
 
 Implementation:
 The code loads the audio files, converts them to spectrograms using the Short-Time Fourier Transform (STFT), and extracts the magnitude spectra. A fully-connected neural network with two hidden layers is trained to predict the clean magnitude spectra from the noisy magnitude spectra.
